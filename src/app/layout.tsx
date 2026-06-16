@@ -29,7 +29,7 @@ export default function RootLayout({
           id="preta-loader"
           src="https://loader.pretasystems.com/?d=clothing-factory-zeta.vercel.app"
           strategy="afterInteractive"
-          data-api="http://localhost:3000/api"
+          data-api="https://app.pretasystems.com/api"
           data-debug="true"
          
         />
