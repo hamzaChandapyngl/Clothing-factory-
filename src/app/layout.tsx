@@ -26,19 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={satoshi.className}>
         <Script
-          id="preta-sdk"
-          src="https://cdn.preta.io/js/sdk-latest.js"
+          id="preta-loader"
+          src="https://loader.pretasystems.com/?d=clothing-factory-zeta.vercel.app"
           strategy="afterInteractive"
+          data-api="http://localhost:3000/api"
+          data-debug="true"
+         
         />
-        <Script id="preta-init" strategy="afterInteractive">
-          {`
-            window.preta = window.preta || [];
-            window.preta.push({
-              projectId: "pr_live_1279406926",
-              mode: "strict"
-            });
-          `}
-        </Script>
         <HolyLoader color="#868686" />
         <TopBanner />
         <Providers>
