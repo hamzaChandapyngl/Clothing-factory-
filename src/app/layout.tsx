@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "@/styles/globals.css";
 import { satoshi } from "@/styles/fonts";
 import TopBanner from "@/components/layout/Banner/TopBanner";
@@ -24,6 +25,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={satoshi.className}>
+        <Script
+          id="preta-sdk"
+          src="https://cdn.preta.io/js/sdk-latest.js"
+          strategy="afterInteractive"
+        />
+        <Script id="preta-init" strategy="afterInteractive">
+          {`
+            window.preta = window.preta || [];
+            window.preta.push({
+              projectId: "pr_live_1279406926",
+              mode: "strict"
+            });
+          `}
+        </Script>
         <HolyLoader color="#868686" />
         <TopBanner />
         <Providers>
