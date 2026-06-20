@@ -24,8 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+    <style dangerouslySetInnerHTML={{ __html: 'html.preta-pre-hide{visibility:hidden!important}' }} />
+    <script dangerouslySetInnerHTML={{ __html:
+      '(function(){try{var d=document.documentElement;d.classList.add("preta-pre-hide");' +
+      'window.__pretaRevealPreHide=function(){d.classList.remove("preta-pre-hide")};' +
+      'setTimeout(window.__pretaRevealPreHide,1500);}catch(e){}})();'
+    }} />
+  </head>
       <body className={satoshi.className}>
-        <style id="preta-ph">[data-preta-prehide]{visibility:hidden!important}</style>
+       
        <script
  async
   src="https://yash-loader-worker.pushkarnagwekar.workers.dev/?d=clothing-factory-zeta.vercel.app"
