@@ -25,14 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={satoshi.className}>
-        <Script
-          id="preta-loader"
-          src="https://loader.pretasystems.com/?d=clothing-factory-zeta.vercel.app"
-          strategy="afterInteractive"
-          data-api="https://app.pretasystems.com/api"
-          data-debug="true"
-         
-        />
+       <script
+  async
+  src="https://yash-loader-worker.pushkarnagwekar.workers.dev/?d=clothing-factory-zeta.vercel.app"
+  data-api="https://app.pretasystems.com/api"
+  data-debug="true">
+</script>
         <HolyLoader color="#868686" />
         <TopBanner />
         <Providers>
