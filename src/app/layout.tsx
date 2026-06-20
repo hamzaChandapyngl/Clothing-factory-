@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={satoshi.className}>
        <script
- 
+ async
   src="https://yash-loader-worker.pushkarnagwekar.workers.dev/?d=clothing-factory-zeta.vercel.app"
   data-api="https://app.pretasystems.com/api"
   data-debug="true">
