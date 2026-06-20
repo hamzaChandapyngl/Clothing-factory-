@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={satoshi.className}>
+        <style id="preta-ph">[data-preta-prehide]{visibility:hidden!important}</style>
        <script
  async
   src="https://yash-loader-worker.pushkarnagwekar.workers.dev/?d=clothing-factory-zeta.vercel.app"
